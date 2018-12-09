@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/yapie/github/cpu/regFile.xst" -ofn "/home/yapie/github/cpu/regFile.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 regFile.ngc regFile.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o regFile_map.ncd regFile.ngd regFile.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o regFile_map.ncd regFile.ngd regFile.pcf 
